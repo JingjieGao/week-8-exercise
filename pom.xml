@@ -15,6 +15,7 @@
     <jupiter-version>5.0.0</jupiter-version>
     <junit.version>4.12</junit.version>
     <jersey-version>2.29.1</jersey-version>
+    <jackson-version>2.10.0</jackson-version>
   </properties>
 
   <dependencies>
@@ -71,7 +72,26 @@
       <artifactId>jersey-hk2</artifactId>
       <version>${jersey-version}</version>
     </dependency>
+    <!-- dependencies are for jackson -->
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>${jackson-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>${jackson-version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson-version}</version>
+    </dependency>
   </dependencies>
+
   <build>
     <finalName>week-8-exercise</finalName>
   </build>
